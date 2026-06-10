@@ -1,0 +1,209 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+    min-height:100vh;
+
+    background:#0f172a;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+    font-family:'Poppins', sans-serif;
+
+    overflow:hidden;
+
+    color:white;
+}
+
+/* Main Section */
+
+.palette-system{
+    width:100%;
+
+    max-width:1300px;
+}
+
+/* Header */
+
+.header{
+    text-align:center;
+
+    margin-bottom:60px;
+}
+
+/* Tag */
+
+.tag{
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:40px;
+
+    background:
+        rgba(255,255,255,0.08);
+
+    border:
+        1px solid rgba(255,255,255,0.1);
+
+    margin-bottom:25px;
+
+    font-size:14px;
+
+    letter-spacing:2px;
+}
+
+/* Heading */
+
+.header h1{
+    font-size:68px;
+
+    margin-bottom:20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #60a5fa,
+            #a78bfa
+        );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+}
+
+/* Paragraph */
+
+.header p{
+    font-size:22px;
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+}
+
+/* Grid */
+
+.palette-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px,1fr));
+
+    gap:25px;
+}
+
+/* Palette Card */
+
+.palette-card{
+    background:
+        rgba(255,255,255,0.06);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    transition:0.4s;
+
+    backdrop-filter:blur(12px);
+}
+
+/* Hover */
+
+.palette-card:hover{
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 15px 35px rgba(96,165,250,0.2);
+}
+
+/* Color Preview */
+
+.color{
+    height:180px;
+}
+
+/* Colors */
+
+.blue{
+    background:#2563EB;
+}
+
+.purple{
+    background:#7C3AED;
+}
+
+.pink{
+    background:#EC4899;
+}
+
+.orange{
+    background:#F97316;
+}
+
+.green{
+    background:#22C55E;
+}
+
+.dark{
+    background:#111827;
+}
+
+/* Content */
+
+.palette-card h3{
+    font-size:24px;
+
+    margin:25px 20px 10px;
+}
+
+.palette-card span{
+    display:block;
+
+    margin:0 20px 25px;
+
+    color:#94a3b8;
+
+    font-size:16px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .header h1{
+        font-size:48px;
+    }
+
+    .header p{
+        font-size:18px;
+    }
+}
+
+@media(max-width:500px){
+
+    .header h1{
+        font-size:38px;
+    }
+
+    .palette-card h3{
+        font-size:20px;
+    }
+}
